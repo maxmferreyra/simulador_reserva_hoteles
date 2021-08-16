@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="titulo">Hoteles</h1>
+    </header>
+
+    <div id="container-card" class="main-container"></div>
+
+    <!--MODAL-->
+    <div class="main-container" id="miModal">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tituloModal"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <img class="modal-img" id="imgHotelModal" src="" alt="">
+                        <p id="descripcionModal" class="descripcion-modal"></p>
+                        <div class="modal-locacion">
+                            <p id="ciudadModal">,</p>
+                            <p id="paisModal"></p>
+                        </div>
+                        <p id="habitacionesModal">Habitaciones</p>
+                        <div class="modal-precio">
+                            <p id="precioModal"></p>
+                        </div>
+
+                        <!--Agregamos al modal-->
+                        <div id="containerForm" class="containerForm"></div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmarReserva()" id="confirmarReserva">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="bi bi-instagram" id="instagram"></i></a>
+        <a href="https://twitter.com/login" target="_blank"><i class="bi bi-twitter" id="twitter"></i></a>
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook" id="facebook"></i></a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./scritps/hoteles.js"></script>
+    <script src="./scritps/modal.js"></script>
+    <script src="./scritps/card.js"></script>
+</body>
+
+</html>

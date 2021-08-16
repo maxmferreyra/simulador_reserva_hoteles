@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+.header {
+    height: 100px;
+    background-color: #0A1D37;
+}
+
+h1 {
+    margin-left: 60px;
+    padding: 20px 0px 0px 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+main {
+    height: 465px;
+}
+
+.container-form {
+    margin: 0 auto;
+    padding-top: 70px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+h3 {
+    padding: 13px 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0A1D37;
+    color: white;
+    margin-bottom: 17px;
+}
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-registro input {
+    margin: 10px 20px 20px 20px;
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(102, 99, 99, 0.432);
+}
+
+.form-registro input:focus {
+    background-color: transparent;
+}
+
+.form-registro input::placeholder {
+    color: black;
+}
+
+.form-registro input:invalid {
+    border-bottom: 2px solid #ca0a0a;
+}
+
+.container-checkbox {
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-registro input:last-child {
+    width: 15px;
+    margin: 0 auto;
+}
+
+.form-registro label {
+    margin: 0px 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+button {
+    background-color: #CC6733;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: all 0.8s ease-in-out;
+}
+
+button:hover {
+    transition: all 0.8s ease-in-out;
+    background-color: white;
+    color: #CC6733;
+}
+
+p {
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0A1D37;
+}
+
+footer {
+    border: 1px solid;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #061830;
+}
+
+footer a {
+    color: white;
+    margin: 0px 15px;
+    font-size: 20px;
+}
+
+.active {
+    color: #CC6733;
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+}
